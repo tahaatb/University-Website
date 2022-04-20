@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -24,9 +26,10 @@
                     <li><a href="">CONTACT US</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>World's finest University</h1>
+            <h1>World's<span class="red-title"> finest</span> University</h1>
             <p>This University integrates the theoretical and practical aspect of learning like no other.
                 <br>  We gathered the finest professors world-wide to provide the optimal learning experience for you!
             </p>
@@ -34,6 +37,16 @@
         </div>
 
     </section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function openMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px"
+    }
+        
     
+</script>  
 </body>
 </html>
