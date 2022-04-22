@@ -127,7 +127,7 @@ p {
 }
 h3 {
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     margin: 10px;
 }
 .campus {
@@ -136,7 +136,80 @@ h3 {
     text-align: center;
     padding-top: 50px;
 }
-@media(max-width: 700px) {
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover {
+    background: rgba(226,0,0,0.7);
+}
+.layer h3 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: transparent;
+    font-size: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.layer:hover h3 {
+    color: white;
+    bottom: 49%;
+}
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.facilities-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5%;
+    text-align: left;
+    
+}
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p {
+    padding: 0;
+}
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+@media(max-width:700px) {
     .text-box h1 {
         font-size: 20px;
     }
