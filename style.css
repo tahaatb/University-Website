@@ -209,6 +209,67 @@ h3 {
     text-align: center;
     padding-top: 50px;
 }
+.testimonials-col {
+    flex-basis: 43%;
+    overflow: hidden;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+}
+.testimonials-col img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonials-col p {
+    padding: 0;
+}
+.testimonials-col h3 {
+    margin-top: 15px;
+    margin-left: 0;
+    text-align: left;
+}
+.testimonials-col i {
+    color: #f44336;
+}
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons i {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 20px;
+}
+.footer .fa-heart {
+    color: red;
+}
 @media(max-width:700px) {
     .text-box h1 {
         font-size: 20px;
@@ -229,15 +290,21 @@ h3 {
     }
     nav .fa {
         display: block;
-        margin: 10px 0;
+        margin: 10px 0px;
         font-size: 25px;
         color: white;
         cursor: pointer;
+    }
+    nav .fa-times {
+        margin-left: 10px;
     }
     .nav-links ul {
         padding: 20px;
     }
     .row {
         flex-direction: column;
+    }
+    .cta h1 {
+        font-size: 24px;
     }
 }
