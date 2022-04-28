@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
-    
 }
 
 .header {
@@ -13,6 +12,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow-x: hidden;
 }   
 
 nav {
@@ -117,7 +117,7 @@ p {
 }
 .course-col {
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #c9eef581;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -290,7 +290,7 @@ h3 {
     }
     .nav-links {
         position: absolute;
-        background: #f44336;
+        background: #00a3d4;
         right: -200px;
         top: 0;
         height: 100vh;
